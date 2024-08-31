@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table Website</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+
+	<body>
+		<table>
+			<caption> Employees Payroll Table </caption>
+			<!-- "thead" tag is used to group header columns -->
+			<thead>
+				<!-- heading row -->
+				<tr>
+					<th>Emp Id</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Designation</th>
+					<th>Salary x 1000</th>
+				</tr>
+			</thead>
+			<!-- the contents of the table -->
+			<tbody>
+				<!-- 1st data row -->
+				<tr>
+					<td>1</td>
+					<td colspan="2">Sri Karthik</td>
+					<td>Web Dev</td>
+					<td>50</td>
+				</tr>
+				<!-- 2nd data row -->
+				<tr>
+					<td>2</td>
+					<td>Harry</td>
+					<td>Potter</td>
+					<td rowspan="2">Python Dev</td>
+					<td >30</td>
+				</tr>
+				<!-- third data row -->
+				<tr>
+					<td>3</td>
+					<td>Shrivatsa</td>
+					<td>Shetty</td>
+					<td >20</td>
+				</tr>
+			</tbody>
+			<!-- table footer -->
+			<tfoot>
+				<tr> 
+					<td colspan="4"> <b> Total </b> </td>
+					<td>100</td>
+				</tr>
+			</tfoot>
+
+		</table>
+	</body>
+</html>

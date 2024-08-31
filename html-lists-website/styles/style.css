@@ -1,0 +1,13 @@
+
+/* using id selectors */
+#circle-bulleted-list{
+    list-style: circle;
+}
+
+#square-bulleted-list{
+    list-style: square;
+}
+
+#none-bulleted-list{
+    list-style: none;
+}

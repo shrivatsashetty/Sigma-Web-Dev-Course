@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <h1>HTML Lists</h1>
+    <!-- Headings with an underline -->
+    <u>
+        <h2>Ordered Lists</h2>
+    </u>
+    <p>
+        <b>O</b>rdered <b>L</b>ist use hirearchical symbols to display items in an order <br>
+        We can also control the start index using the start attribute
+    </p>
+    <!-- type="1" is default, start attribute specifies the start index -->
+    <ol type="1" start="10"> 
+        <li>Ten</li>
+        <li>Eleven</li>
+        <li>Twelve</li>
+    </ol>
+    <p>
+        The Ordering can also be specified using alphabets <br>
+        This achieved by using the <b>type</b> attribute of the <b>ol</b> tag
+    </p>
+
+    <!-- below is an example of a nested list i.e. list inside a list-->
+    <ol>
+        <li>
+            <p>Using UPPERCASE English Alphabets</p>
+            <ol type="A">
+                <li>APPLE</li>
+                <li>BALL</li>
+                <li>CAT</li>
+            </ol>
+
+        </li>
+
+        <li>
+            <p>Using <i>lowercase</i> English Alphabet</p>
+            <ol type="a">
+                <li>apple</li>
+                <li>ball</li>
+                <li>cat</li>
+            </ol>
+        </li>
+
+        <li>
+            <p>Using UPPERCASE Roman Numerals</p>
+            <ol type="I">
+                <li>Jupyter</li>
+                <li>Saturn</li>
+                <li>Neptune</li>
+            </ol>
+        </li>
+
+        <li>
+            <p>Using lowercase Roman Numerals</p>
+            <ol type="i">
+                <li>Zeus</li>
+                <li>Posedion</li>
+                <li>Hades</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- underlining the headings -->
+    <u><h2>Unordered Lists</h2></u>
+    <p><b>U</b>norderd <b>L</b>ists use bullet points to display items in order</p>
+    <ul id="circle-bulleted-list">
+        <li>Rama</li>
+        <li>Shyama</li>
+        <li>Bama</li>
+    </ul>
+
+    <ul id="square-bulleted-list">
+        <li>Circle</li>
+        <li>Triangle</li>
+        <li>Rectangle</li>
+    </ul>
+
+    <ul id="none-bulleted-list">
+        <li>Red</li>
+        <li>Yellow</li>
+        <li>Green</li>
+    </ul>
+
+    <u><h2>Description List</h2></u>
+    <p>In this type of list, each index is a term and the value is description of the index</p>
+    <dl>
+        <dt>Coding</dt>
+        <dd>Writing instructions for the machine to perform a task.</dd>
+        <dt>Writing</dt>
+        <dd>The process of recording information in a paper or a digital means</dd>
+        <dt>Sleeping</dt>
+        <dd>The process to provide your body with some rest</dd>
+    </dl>
+
+    <u><h2>Nested List</h2></u>
+    <p>A list within a list</p>
+    <ul>
+        <li>
+            <p>Fruits</p>
+            <ol>
+                <li>Apple</li>
+                <li>Strawberry</li>
+                <li>Mango</li>
+            </ol>
+        </li>
+
+        <li>
+            <p>Nuts</p>
+            <ol>
+                <li>Groundnut</li>
+                <li>Cashews</li>
+                <li>Walnut</li>
+            </ol>
+        </li>
+
+        <li>
+            <p>Veggies</p>
+            <ol>
+                <li>Carrot</li>
+                <li>Beans</li>
+                <li>Cucumber</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>
