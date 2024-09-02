@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Froms</title>
+	</head>
+
+	<body>
+        <h1>Simple User Form</h1>
+        
+        <form action="post">
+            <div>
+                <label for="email-input">Email Id: </label>
+                <input type="text" id="email-input" name="username" placeholder="ex: shrivatsa@307" autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <p>Select Gender Below:</p>
+                <input type="radio" id="male-gender" name="gender" value="M">
+                <label for="male-gender">Male</label>
+                <input type="radio" id="female-gender" name="gender" value="F">
+                <label for="female-gender">Female</label>
+            </div>
+            <div>
+                <input type="checkbox" id="opted-checkbox" name="opted">
+                <label for="opted-checkbox">Would you like to be contacted via mail ?</label>
+            </div>
+            <div>
+                <label for="comments">Additional Comments:</label> <br>
+                <textarea name="comments" id="comments" rows="4" cols="40">Hello Sir/Ma'am,</textarea>
+            </div>
+            <div>
+                <label for="contact-method">How would you like to be contacted ?</label> <br>
+                <select name="contact-method" id="contact-method">
+                    <!-- it is possible to further group the option list -->
+                    <optgroup label="online">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="watsapp">Watsapp</option>
+                    </optgroup>
+                    <optgroup label="offline">
+                        <option value="letter">Letter</option>
+                        <option value="fax">Fax</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="btn-submit">Submit Your Responses</label>
+                <input  id="btn-submit" type="submit" value="submit">
+            </div>
+        </form>
+    </body>
+</html>
