@@ -1,0 +1,31 @@
+p {
+    background-color: aqua;
+}
+
+#anchor-google {
+    background-color: yellowgreen;
+}
+
+#anchor-youtube {
+    background-color: rgb(229, 142, 142);
+}
+
+div {
+    background-color: rgb(181, 86, 192);
+}
+
+#inner-span {
+    background-color: bisque;
+}
+
+strong {
+    background-color: rgb(211, 184, 236);
+}
+
+em {
+    color: red;
+}
+
+#outer-span {
+    background-color: yellow;
+}
