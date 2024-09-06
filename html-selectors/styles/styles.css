@@ -1,0 +1,33 @@
+/* example for an id selector */
+#first-div {
+    color: purple;
+}
+/* example for id slector */
+#second-div {
+    color: darkgreen;
+}
+/* example for a class selector */
+.red {
+    background-color: red;
+}
+/* example for type selector
+    slects based on type of html element*/
+p {
+    background-color: aqua;
+}
+/* exampe for an element selector */
+span {
+    background-color: yellow;
+    font-style: italic;
+    font-family: sans-serif;
+}
+/* example for grouping selector */
+p, span {
+    font-weight: bold;
+}
+/* universal selector,
+slects every element */
+* {
+    border: 4px solid blanchedalmond;
+    margin-left: 10px;
+}
