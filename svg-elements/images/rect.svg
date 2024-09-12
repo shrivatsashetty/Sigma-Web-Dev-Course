@@ -1,0 +1,5 @@
+<!-- the SVG contents are basically written in XML -->
+<!-- therefore we need to add the namespace declaration at the beginning -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150">
+    <rect x="10" y="10" width="200" height="120" stroke="red" stroke-width="6" fill="lightgreen" />
+</svg>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SVG-Shapes</title>
+        <link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+        <h1>SVG Examples</h1>
+
+        <h2>An SVG Circle</h2>
+        <!-- Inline SVG element -->
+        <div>
+            <svg height="150" width="150">
+                <circle cx="70" cy="70" r="50" stroke="green" stroke-width="4" fill="yellow">
+            </svg>
+        </div>
+
+        <h2>An SVG Reactangle</h2>
+        <!-- An SVG from an external file -->
+        <div>
+            <img src="images/rect.svg" alt="SVG Image">
+        </div>
+        <h2>A Transparent SVG Square with Rounded Corners</h2>
+        <!-- SVG with stylings applied -->
+        <div>
+            <svg width="350" height="180">
+                <rect id="sq-rounded-corner" x="25" y="25" rx="20" ry="20" width="125" height="125" />
+            </svg>
+        </div>
+        <!-- SVG Ellipse & Text element -->
+        <h2>An Ellipse & SVG Text</h2>
+        <div>
+            <svg height="150" width="200">
+                <ellipse cx="100" cy="75" rx="85" ry="45" fill="rgb(255, 160, 122)" />
+                <text x="40" y="75" font-size="20" font-family="Verdana" fill="blue">Hello World !!!</text>
+            </svg>
+        </div>
+        <!-- SVG Polygon -->
+        <h2>An SVG Polygon</h2>
+        <div>
+            <svg height="200" width="300">
+                <polygon id="polygon-star" points="100,10 40,198 190,78 10,78 160,198"/>
+            </svg>
+        </div>
+
+        <h2>Iframe Example</h2>
+        <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/XZwBNDGuWGU?si=ORtOp3HQbMvIh74G" 
+            title="YouTube video player" 
+            frameborder="10" allow >
+        </iframe>
+
+    </body>
+</html>

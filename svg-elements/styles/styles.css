@@ -1,0 +1,13 @@
+#sq-rounded-corner {
+    fill: red;
+    stroke: black;
+    stroke-width: 10;
+    opacity: 0.6;
+}
+
+#polygon-star {
+    fill: lime;
+    stroke: purple;
+    stroke-width: 5;
+    fill-rule: evenodd;
+}
