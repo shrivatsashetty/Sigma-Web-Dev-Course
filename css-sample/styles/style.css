@@ -1,0 +1,8 @@
+
+/* selecting multiple element by element type */
+div, p {
+    /* used to determine the background color */
+    background-color: greenyellow;
+    /* determines the color of the element's content */
+    color: purple;
+}
