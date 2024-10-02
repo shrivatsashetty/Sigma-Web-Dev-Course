@@ -1,0 +1,39 @@
+
+/* direct child selector */
+div > p {
+    font-style: italic;
+    color: aqua;
+}
+
+/*  decendant selector 
+    selects all the specified decendants of a particular element
+*/
+article p {
+    background-color: bisque;
+}
+
+/* pseudo selectors */
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:active {
+    background-color: aquamarine;
+}
+
+a:hover {
+    background-color: red;
+}
+
+/* selecting an element by id and applying a pseudo selector */
+#hover-div:hover {
+    background-color: coral;
+}
+
+p:first-child {
+    background-color: rgb(200, 56, 178);
+}

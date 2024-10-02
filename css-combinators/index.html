@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Combinators</title>
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+	<h1>CSS Combinator Selectors</h1>
+	<body>
+		<div>
+			<p id="p1" class="direct-child first-child">I'm a para element and the first child of the first div </p>
+			<p id="p2" class="direct-child">I'm another para element and the second child of the first div </p>
+			<p id="p2" class="direct-child">I'm another para element and the second child of the first div </p>
+
+			<article class="indirect-child"> 
+				<p id="p3" class="first-child" >I'm an immediate child of article</p>
+				<section>
+					<p id="p4" class="first-child">I'm a para tag inside the first section of the article</p>
+					<article>
+						I'm a nested article
+					</article>
+				</section>
+
+				<section>
+					I'm a text content inside second section of the article 
+				</section>
+			</article>
+			<a href="https://www.google.com" target="_blank">Google</a>
+		</div>
+
+		<div id="hover-div">
+			Hover over me
+		</div>
+    </body>
+</html>
