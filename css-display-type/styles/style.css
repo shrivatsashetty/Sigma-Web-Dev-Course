@@ -1,0 +1,28 @@
+p, ul {
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+}
+
+span {
+    border: 2px solid blue;
+}
+
+ul {
+    /* below style will apply to all direct child element  */
+    display: flex;
+}
+
+li {
+    border: 2px solid blue;
+    padding: .5em;
+}
+
+li {
+    list-style: none;
+}
+
+.block {
+    display: block;
+    border: 2px solid blue;
+    padding: .5em;
+}
