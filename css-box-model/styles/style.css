@@ -1,0 +1,31 @@
+/* to remove the default padding and margin added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* common styling to be applied for all div elements */
+div {
+    text-align:center;
+    width: 10%;
+    height: 100px;
+}
+
+/*  Stylings specific to the first and the second div element applied using class selectors
+    class selector takes precedence over the element selector */
+
+.first-box {
+    background-color: pink;
+    padding: 60px;
+    border: 40px solid green;
+    margin: 20px;
+}
+
+.second-box {
+    background-color: aqua;
+    padding: 60px;
+    border: 40px solid orangered;
+    margin: 40px;
+}
+
+

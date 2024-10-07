@@ -1,0 +1,14 @@
+.box {
+    border: 10px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+    /* sets the color of the content i.e. text */
+    color: rgb(12, 148, 41);
+}
+
+.alternate {
+    box-sizing: border-box;
+}
