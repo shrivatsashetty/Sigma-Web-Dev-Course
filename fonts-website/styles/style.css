@@ -1,0 +1,164 @@
+/* import the google fonts via it's API
+    the import statement must be added to the top of the stylesheets */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Sixtyfour+Convergence&display=swap');
+
+/* font family
+    the font family consist of main fonts followed by 
+    the fallback fonts 
+*/
+#f-fam-p1 {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+#f-fam-p2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#f-fam-p3 {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* custom fonts */
+h1 {
+    text-align: center;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+}
+
+h2 {
+    font-family: "Edu AU VIC WA NT Dots", cursive, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* determine the color of the text */
+    color: hotpink;
+}
+
+/* styles to determine the font sizes */
+#f-size-p1 {
+    font-size: small;
+}
+
+#f-size-p2 {
+    font-size: medium;
+}
+
+#f-size-p3 {
+    font-size:large;
+}
+
+#f-size-p4 {
+    font-size:larger;
+}
+
+#f-size-p5 {
+    font-size: 25px;
+}
+
+/* styles to detrmine the font style */
+#f-style-p1 {
+    font-style: italic;
+}
+
+#f-style-p2 {
+    font-style: oblique;
+}
+
+#f-style-p3 {
+    font-style: normal;
+}
+
+/* styles to set the fonr weight */
+#f-wt-p1 {
+    font-weight: 100;
+}
+
+#f-wt-p2 {
+    font-weight: bold;
+}
+
+#f-wt-p3 {
+    font-weight: 1000;
+}
+
+/* text decoration */
+#txt-decor-p1 {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+
+#txt-decor-p2 {
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}
+/* using pseudo selectors to produce effect on hover */
+#txt-decor-p3:hover {
+    text-decoration: underline;
+    text-decoration-style:dashed;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+/* line spacing */
+.lin-space {
+    line-height: 2.3;
+}
+
+/* letter spacing */
+.ltr-space {
+    letter-spacing: 8px;
+}
+
+/* text trnsformation */
+#txt-trans-p1 {
+    text-transform: uppercase;
+}
+
+#txt-trans-p2 {
+    text-transform: lowercase;
+}
+
+#txt-trans-p3 {
+    /* Title Case */
+    text-transform: capitalize;
+}
+
+/* text indent */
+#txt-ind-p2 {
+    text-indent: 25px;
+}
+
+#txt-ind-p3 {
+    text-indent: 50px;
+}
+
+#txt-ind-p4 {
+    text-indent: 100px;
+}
+
+/* text overflow */
+#txt-over-p1 {
+    width: 50px;
+    border: 5px solid blueviolet;
+    padding: 5px;
+}
+
+.txt-overflow {
+    /* how will the overflown text be represented */
+    overflow: scroll;
+    /* overflow style */
+    text-overflow: ellipsis;
+
+    /* word-break: break-all; */
+}
