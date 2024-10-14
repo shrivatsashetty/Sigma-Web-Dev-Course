@@ -1,0 +1,62 @@
+/* CSS text styling container */
+div {
+    margin-top: 40px;
+    margin-left: 40px;
+    border: 2px dashed red;
+    padding: 8px;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: pink;
+    /* determines the text color */
+    color: red;
+    text-shadow: 2px 2px 5px black;
+}
+
+p {
+    padding: 20px;
+    /* sets the text alignment of the paragraph */
+    text-align: justify;
+    /* sets the alignment of the last line of the paragraph */
+    text-align-last: center;
+    /* indentation of the paragraph's first line */
+    text-indent: 40px;
+    /* spacing b/w the lines */
+    line-height: 2.5;
+    /* spacing b/w the letters(alphabets) */
+    letter-spacing: 3px;
+    /* spacing b/w the words */
+    word-spacing: 8px;
+    /* contrasting background color and text color makes text more readable */
+    background-color: aqua;
+    /* sets the color of the text content of the para element */
+    color: blue;
+}
+
+a {
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+}
+
+.txt-overline {
+    text-decoration-line: overline;
+    text-decoration-color: blue;
+}
+/* produce underline on hover using pseudo selectors */
+.txt-underline:hover, paranthesis-txt:hover {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 3px;
+}
+/* shrothand for the above style */
+.txt-underline:hover, .paranthesis-txt:hover {
+    text-decoration: underline red dashed 3px;
+}
+/* to nullify the effect on the element from other selectors */
+.paranthesis-txt {
+    letter-spacing: 0px;
+}
