@@ -1,0 +1,34 @@
+h1 {
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+h2 {
+    border: 5px dashed tomato;
+}
+
+h3 {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#color-tomato {
+    background-color: tomato;
+}
+
+#color-azure {
+    background-color: azure;
+}
+
+#l1 {
+    color: violet;
+}
+
+#rgb-example-1 {
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+#hsl-example-1 {
+    background-color: hsl(300, 76%, 72%);
+}
