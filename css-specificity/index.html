@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="demo of CSS Specificity Algorithm" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>CSS Specificity</title>
+	</head>
+
+	<body>
+		<h1>Calculate CSS Specificity</h1>
+
+
+
+			<p style="background-color: azure;">
+
+				This para is targetted using inline selector
+			</p>
+
+			<p id="p1" class="para col-red" my-custom-attr="a1">
+				
+				This para is targetted by a custom selector
+			</p>
+
+			<p id="p2" class="para col-red">
+				
+				This para is targetted using a id selector
+			</p>
+
+			<p class="para col-red">
+				
+				This para is targetted using the latest applied class selector
+			</p>
+
+			<p class="para col-red">
+				
+				This para is targetted using the latest applied class selector
+			</p>
+
+			<p>
+				
+				This para is targetted using element selector
+			</p>
+
+			<p id="p6" my-custom-attr="a2">
+				
+				This para is targetted using !important notation
+			</p>
+
+			<div>
+				<p>
+				
+					This para is targetted using complex slector
+				</p>
+			</div>
+
+
+	</body>
+</html>

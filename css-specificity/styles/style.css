@@ -1,0 +1,53 @@
+/* 
+    CSS selectors arranged in the increasing order specificity 
+    i.e. least specific to most specific 
+*/
+
+/* universal selector has the specificity value of 0 */
+* {
+	background-color: greenyellow;
+}
+
+/* element selector has a specificity value of 1  */
+p {
+	background-color: pink;
+}
+
+/* class selector has a specificity value of 10 */
+.col-red {
+	background-color: red;
+}
+
+/* the styles contained in the latest aplied class selector will override the
+    styles of the previous class selectors */
+.para {
+	background-color: yellow;
+}
+
+/* targetting an element using a custom selector in CSS 
+	a custom slector has a specificity same as a class selector i.e. 10
+*/
+[my-custom-attr="a1"] {
+	background-color: aqua;
+}
+
+/* id selector has a specificity value of 100 */
+#p2 {
+	background-color: brown;
+}
+
+/* for the last para the !important notation overrides all */
+[my-custom-attr="a2"] {
+	background-color: azure;
+}
+
+#p6 {
+	background-color: blueviolet !important;
+}
+
+/* for complex selectors the specificities of each individual selectors get added up
+	in this case 1 + 1 = 2 from the two element selectors	
+*/
+div p {
+    background-color: indianred;
+}
