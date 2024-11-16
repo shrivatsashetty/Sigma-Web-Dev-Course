@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>CSS Sizing Units</title>
+	</head>
+
+	<body>
+		<div class="box">
+			<p>This is the topmost box in the webpage</p>
+		</div>
+
+		<div class="container">
+			<p id="p1" indent="l1">
+				This is the first para inside the div element <br />
+				The font-size is directly inherited from the parent by default
+				<br />
+			</p>
+
+			<p id="p2">
+				This para uses the "em" sizing unit for the text <br />
+				The font-size will be relative to the parent element's font-size
+				<br />
+			</p>
+
+			<p id="p3">
+				The text inside this para uses the "rem" sizing unit <br />
+				hence the font-size will the calculated relative to the root
+				element
+			</p>
+		</div>
+
+		<div class="footer">
+			<p id="p4">This para occupies 100% of parent element width by default</p>
+
+			<p id="p5">
+				The width of this para is set to 75% of it's parent container's width
+			</p>
+
+			<p id="p6">
+				The width if this para is set to 50% of it's parent container's width
+			</p>
+		</div>
+	</body>
+</html>

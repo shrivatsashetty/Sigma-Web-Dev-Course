@@ -1,0 +1,86 @@
+/* * {
+	padding: 0;
+    border: 0;
+	margin: 0;
+} */
+
+html {
+	font-size: 14px;
+}
+
+.box {
+	box-sizing: border-box;
+	border: 2px dashed black;
+	background-color: aquamarine;
+	/* width: 1920px; */
+	width: 80vw;
+	height: 10vh;
+	/* set the left and right margin automatically */
+	margin: 25px auto;
+	text-align: center;
+	font-weight: bolder;
+}
+
+/* creating a parent container for para elements */
+.container {
+	box-sizing: border-box;
+	border: 2px dashed black;
+	background-color: aquamarine;
+
+	/* width: 1920px; */
+	width: 80vw;
+	min-height: 60vh;
+
+	/* manually set top margin value and auto set the rest */
+	margin: 25px auto;
+
+	/* set custom font size */
+	font-size: 18px;
+}
+
+/* lets add some default top-padding to all para elements */
+p {
+	margin-top: 10px;
+}
+
+    #p2 {
+        /* border: 2px solid purple; */
+        color: hotpink;
+        /* assign the font size of 2x of parent element */
+        font-size: 2em;
+    }
+
+    #p3 {
+        /* assign the font size 3x of the root element */
+        font-size: 2rem;
+    }
+
+.footer {
+	margin: auto;
+	/* lets ad some default distancing form the viewport border */
+	margin-bottom: 25px;
+	width: 80vmin;
+	background-color: rebeccapurple;
+	border: 2px dashed black;
+	color: white;
+
+	/* set the minimum height for the container */
+	min-height: 40vh;
+	border: 2px solid salmon;
+}
+
+/* targetting all para elements inside the footer class */
+.footer p {
+	border: 4px solid salmon;
+    /* margin: auto; */
+    margin-top: 25px;
+}
+
+#p5 {
+	/* the % unit sets the width relatve to the parent element */
+	width: 75%;
+}
+
+#p6 {
+	width: 50%;
+}
