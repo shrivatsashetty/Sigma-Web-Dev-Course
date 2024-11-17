@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+
+.box {
+    border: 3px solid blue;
+
+    /* display: inline-block; */
+
+    /* if the display of an element is set to inline,
+    the element will not respect the width, margin-top and the padding-top properties */
+    padding: 30px;
+    margin: 35px;
+    width: 250px;
+
+}
+
+#b1 {
+    display: inline;
+}
+
+#b2 {
+    display: inline-block;
+}
+
+.invisible-box {
+    /* toggle comment and uncomment the below style along with live preview to see effect */
+    visibility: hidden;
+}
+
+.hidden-box {
+    /* toggle comment and uncomment the below style along with live preview to see effect */
+    display: none;
+}
