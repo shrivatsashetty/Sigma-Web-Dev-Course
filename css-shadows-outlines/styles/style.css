@@ -1,0 +1,47 @@
+h1 {
+	color: red;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-align: center;
+}
+
+div.box {
+	border: 3px dotted black;
+	border-radius: 10px;
+	padding: 35px;
+	width: 80%;
+	margin: auto;
+	margin-top: 15vh;
+	font-size: 20px;
+
+	/* box shadow propety */
+	box-shadow: 5px 5px 10px 4px rgb(37, 183, 110);
+}
+
+/* changing the effects while hovered over 
+    on hover the effect changes since the style becomes more specific */
+div.box:hover {
+	box-shadow: 12px 12px 10px 4px rgb(37, 183, 110);
+}
+
+p.txt-shadow {
+	text-shadow: 3px 7px 5px hotpink;
+}
+
+button.btn {
+	border: 2px dashed black;
+	margin-left: 40%;
+	margin-top: 30px;
+
+	/* an outline surrounding the border of the element
+		determine the style of the outline */
+	outline-style: outset;
+	outline-width: 8px;
+	outline-color: salmon;
+
+	/* using the outline shorthand property */
+	outline: 8px outset salmon;
+	
+	/* spacing from the border */
+	outline-offset: 15px;
+}
