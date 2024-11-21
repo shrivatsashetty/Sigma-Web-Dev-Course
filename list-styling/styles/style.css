@@ -1,0 +1,72 @@
+h1 {
+	text-align: center;
+	color: red;
+	text-shadow: 3px 3px 3px black;
+}
+
+/* styles for navbar element */
+ul.navbar {
+	display: flex;
+	background-color: yellowgreen;
+}
+
+nav ul li {
+	/* for navbar we usually set list-style to none */
+	list-style-type: none;
+
+	padding: 10px;
+	margin-right: 6%;
+	font-size: 20px;
+}
+
+/* styles for kannada numbers */
+ul.kannada {
+	/* settting the list marker style to kannada numbers */
+	list-style-type: kannada;
+
+	font-size: 20px;
+}
+
+/* styles for emoji list 
+    the selector selects li element inside the ul element belonging to class emoji    
+*/
+ul.emoji li {
+	list-style-type: "👋🏻";
+	list-style-position: outside;
+
+	margin-top: 10px;
+	font-size: 20px;
+	background-color: yellowgreen;
+	border: 3px solid black;
+}
+
+/* styles for the list of beverage names */
+ul.beverages {
+	background: #ffe5e5;
+	padding: 20px;
+	margin-left: 35px;
+}
+
+ul.beverages li {
+	list-style-type: square;
+	list-style-position: inside;
+
+	background-color: skyblue;
+	padding: 5px;
+	border: 2px solid black;
+	margin-top: 3px;
+}
+
+ul.img-marker li {
+	list-style-type: disc;
+	list-style-position: inside;
+	list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+
+	/* we can also use the folowing shorthand for styling the list */
+	list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+
+	margin-top: 10px;
+	font-size: 40px;
+	background-color: bisque;
+	border: 3px solid black;
+}
