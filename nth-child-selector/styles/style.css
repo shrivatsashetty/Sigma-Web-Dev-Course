@@ -1,3 +1,10 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
 div.box {
     border: 3px solid black;
     margin: 30px;
