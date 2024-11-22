@@ -1,0 +1,45 @@
+div.box {
+    border: 3px solid black;
+    margin: 30px;
+    padding: 10px;
+}
+
+
+div.first-box {
+    background-color: rgb(244, 182, 242);
+}
+
+div.second-box {
+    background-color: rgb(169, 180, 237);
+}
+
+div.third-box {
+    background-color: rgb(237, 236, 169);
+}
+
+div.first-box p {
+    background-color: rgb(142, 147, 222);
+}
+
+div.second-box p {
+    background-color: rgb(132, 244, 244);
+}
+
+div.third-box p {
+    background-color: rgb(220, 157, 208);
+}
+
+/* demo of nth child selector  */
+/* targetting the first child */
+div.first-box :first-child {
+    background-color: greenyellow;
+}
+
+/* tagetting the second child of the element */
+div.second-box :nth-child(2) {
+    background-color: khaki;
+}
+/* targetting the third child */
+div.third-box :nth-child(3) {
+    background-color: mediumaquamarine;
+}
