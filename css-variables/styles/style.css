@@ -1,0 +1,70 @@
+
+/* define a variable with global scope */
+:root {
+    --global-text-color: blue;
+    --global-navbar-item-color: rgb(239, 82, 82);
+}
+
+/* the scopes of the variables are limited to elements belonging to classes
+    container-1 and container-2 and their child elements" */
+.container-1, .container-2 {
+    --container-color: gold;
+    --color-primary: deeppink;
+    --color-secondary: bisque;
+}
+
+body {
+    background-color: lavender;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+/* setting the tetx-color of all para elements using a global variable */
+p {
+    color: var(--global-text-color);
+}
+
+nav ul {
+    display: flex;
+    background-color: greenyellow;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    margin: 5px;
+    margin-right: 5%;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* using a global variable to set bg-color for navbar items */
+    background-color: var(--global-navbar-item-color);
+}
+
+nav ul li:first-child {
+    /* overwriting the value of a global variable */
+    --global-navbar-item-color: sandybrown;
+    background-color: var(--global-navbar-item-color, blue);
+}
+
+div.box {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+div.container {
+    margin:10px;
+    background-color: var(--container-color);
+}
+
+div.box-primary {
+    background-color: var(--color-primary);
+}
+
+div.box-secondary {
+    background-color: var(--color-secondary);
+}
+
