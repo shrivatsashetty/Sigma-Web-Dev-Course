@@ -1,0 +1,62 @@
+/* to netralize the default padding and border added by the browser */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: tan;
+	border: 10px solid red;
+	padding: 10px;
+}
+
+p {
+    font-weight: bolder;
+}
+
+div.container {
+	display: flex;
+	border: 5px solid salmon;
+	background-color: burlywood;
+}
+
+div.box {
+	border: 2px solid black;
+	padding: 30px;
+	margin: 10px;
+	background: azure;
+}
+
+/* the condition inside media query is evaluated to true or false 
+    i.e. till the width is below 880px */
+@media (max-width: 880px) {
+	body {
+		background: blueviolet;
+	}
+}
+
+/* the condition inside media query is evaluated to true or false 
+        i.e. till the width is below 620px */
+@media (max-width: 620px) {  
+	body {
+		background-color: olive;
+	}
+}
+
+/* make the boxes arrange one below the other when the width deacreases below a certain point*/
+@media only screen and (max-width: 455px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* change the border color when orientation changes */
+@media screen and (orientation: portrait) {
+    body {
+        border-color: blue;
+    }
+}
+
+
+
+
