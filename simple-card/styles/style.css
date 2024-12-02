@@ -14,6 +14,14 @@ div.card-container {
     left: 40vw;
     box-shadow: 10px 10px 15px black;
     overflow: hidden;
+    /* margin: 30px 25px 10px 5px;
+    display: inline-flex; */
+}
+
+/* text-align: center centers the content 
+    may it be text, image or button*/
+div.img-box {
+    text-align: center;
 }
 
 
@@ -24,13 +32,12 @@ div.img-box img {
     margin-top: 5%;
     padding: 3px;
     border: 3px solid black;
-    position: relative;
-    left: 10%;
 }
 
 div.caption-container {
     position: relative;
     left: 10%;
+
 }
 
 p.caption-content {
@@ -38,7 +45,10 @@ p.caption-content {
     border-radius: 15px;
     padding: 10px;
     margin: 5px;
+    font-style: italic;
     display: inline-block;
+    text-align: center;
+    font-size: 13px;
 }
 
 div.article-heading-container {
@@ -63,12 +73,34 @@ div.article-btn-container {
     margin-top: 8%;
 }
 
+.article-content {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* bring the button to center */
+div.article-btn-container {
+    text-align: center;
+}
+
 button.article-btn {
-    border: 1px solid black;
+    border: none;
+    /* set padding top, right, bottom & left together */
+    padding: 5px 15px 5px 15px;
     border-radius: 15px;
     background-color: rgb(178, 218, 234);
-    padding: 6px;
-    position: relative;
-    left: 38%;
+    padding: 10px;
+    color: blue;
+}
+
+/* add hover effct to button */
+button.article-btn:hover {
+    /* produces an effect of a finger pointer
+     when user hovers over the button  */
+    cursor: pointer;
+    /* change the bg-color of the button slightly 
+    when the user hovers over the button */
+    background-color: lavender;
 }
 
