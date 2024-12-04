@@ -1,0 +1,54 @@
+.image {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#img-1 {
+    float: none;
+}
+
+#img-2 {
+    float: left;
+}
+
+#img-3 {
+    float: right;
+}
+
+.container {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.container-label {
+    font-weight: bolder;
+    /* font-size: 20px; */
+}
+
+.box {
+    border: 3px solid salmon;
+    padding: 10px;
+    margin: 5px;
+    /* prevent any child element from overflowing  */
+    display: flow-root;
+}
+
+
+/* the below property makes the element 
+the new root element for it's contents  */
+.text-content {
+    color: blue;
+    display: flow-root;
+    border: 3px solid blue;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+/* example of clear property */
+#para-4 {
+    /* prevents any element floating to the right */
+    clear: right;
+}
