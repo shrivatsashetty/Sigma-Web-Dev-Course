@@ -5,48 +5,48 @@ h1 {
     text-decoration-style: wavy;
 }
 
-div.box {
+.box {
     border: 3px solid black;
     margin: 30px;
     padding: 10px;
 }
 
 
-div.first-box {
+.first-box {
     background-color: rgb(244, 182, 242);
 }
 
-div.second-box {
+.second-box {
     background-color: rgb(169, 180, 237);
 }
 
-div.third-box {
+.third-box {
     background-color: rgb(237, 236, 169);
 }
 
-div.first-box p {
+.first-box p {
     background-color: rgb(142, 147, 222);
 }
 
-div.second-box p {
+.second-box p {
     background-color: rgb(132, 244, 244);
 }
 
-div.third-box p {
+.third-box p {
     background-color: rgb(220, 157, 208);
 }
 
 /* demo of nth child selector  */
 /* targetting the first child */
-div.first-box :first-child {
+.first-box:first-child {
     background-color: greenyellow;
 }
 
 /* tagetting the second child of the element */
-div.second-box :nth-child(2) {
+.second-box :nth-child(2) {
     background-color: khaki;
 }
 /* targetting the third child */
-div.third-box :nth-child(3) {
+.third-box :nth-child(3) {
     background-color: mediumaquamarine;
 }
