@@ -1,0 +1,80 @@
+.box {
+    border: 2px solid black;
+    padding: 3px;
+    margin: 10px;
+}
+
+/* selects the element if it's a first child of it's parent */
+.box:first-child {
+    background-color: aquamarine;
+}
+
+
+/* selects the child ampoung all decendants of 
+elements belonging to box class */
+.box :nth-child(2) {
+    background: rgb(186, 146, 225);
+}
+
+/* targets only the first line content of an element */
+.box::first-line {
+    color: blue;
+}
+
+/* using universal selecor inside a specific context 
+    in the below rule will be applied to all elements inside "boxes" class*/
+.boxes *{
+    color: blueviolet;
+}
+
+/* custom attribute selector  */
+[my-cutom-aatr="a1"] {
+    font-style: italic;
+}
+
+/* odd or even */
+.box:nth-child(even) {
+    background-color: lightgrey;
+}
+
+/* nth child from last */
+.box:nth-last-child(2) {
+    background-color: lightpink;
+}
+
+/* below re few exmaples for pseudo-element selector */
+
+/* apply styles to elements when user makes cursor selection 
+since anchor element is not specified the rule applies to all the elements*/
+::selection {
+    background-color: black;
+    color: aqua;
+}
+
+/* target only the first letter of all paragraphs */
+p::first-letter {
+    font-size: 30px;
+}
+
+/* dynamically add content using CSS */
+.boxes::before {
+    content: "This is dynamically generated using CSS";
+    color: green;
+    font-size: 30px;
+}
+
+.boxes::after {
+    content: "This is dynamically generated using CSS";
+    color: red;
+    font-size: 30px;
+}
+
+/* target placeholder of a input element */
+input::placeholder {
+    color: greenyellow;
+    font-style: italic;
+}
+
+
+
+
