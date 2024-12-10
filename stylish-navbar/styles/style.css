@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* declare some global CSS variables */
+:root {
+    --primary-color: rgb(170, 81, 253);
+    --secondary-color: rgb(223, 204, 243);
+    --global-text-color: white;
+}
+
+ul {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 10px 0px 10px 0px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    padding-right: 30px;
+    color: whitesmoke;
+    font-size: large;
+}
+
+nav ul li:first-child {
+    padding-left: 40px;
+}
+
+nav ul li a {
+    color: var(--global-text-color);
+    text-decoration-line: none;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    position: sticky;
+    top:0px;
+    /* bring the navbar to the top */
+    z-index: 1;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    border: 3px solid black;
+    margin: 5vw 5vw 5vw 5vw;
+
+    border-radius: 15px;
+}
+
+.container-1 {
+    width: 90vw;
+    height: 60vh;
+    background-color: lightgreen;
+    /* to center the child elements */
+    /* text-align: center; */
+    position: relative;
+    left: 0px;
+}
+
+.box {
+    width: 35%;
+    height: 80%;
+
+    margin-top: 50px;
+
+    margin-top: 50px;
+    border: 2px solid black;
+    display: inline-flex;
+}
+
+#box-1 {
+    position: absolute;
+    left: 10%;
+    background-color: aqua;
+}
+
+#box-2 {
+    position: absolute;
+    right: 10%;
+    background-color: palevioletred;
+}
+
+
+.container-2 {
+    display: flex;
+    margin: 5vw 0 5vw 5vw;
+}
+
+.text-box {
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 62vw;
+    height: 8vh;
+    background-color: yellow;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.img-container {
+    width: 30%;
+    border: none;
+    position: absolute;
+    right: 25%;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+footer {
+    background-color: gold;
+    height: 10vh;
+    padding: 20px;
+
+}
+
+footer div {
+    text-align: center;
+    margin: 30px;
+}
+
