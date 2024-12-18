@@ -1,0 +1,112 @@
+h2 {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.flex-container {
+    border: 3px solid black;
+    height: 55vh;
+    background-color: lightblue;
+
+    /* setting the display property to flex */
+    display: flex;
+
+
+    /* set the gap b/w adjacent rows and columns */
+    row-gap: 35px;
+    column-gap: 20px;
+    /* the following shorthand property can be used */
+    gap: 35px 20px;
+
+    overflow: scroll ;
+}
+
+.flex-item {
+    border: 3px solid black;
+    background-color: blueviolet;
+    width: 96px;
+    height: 96px;
+    padding: 5px;
+    font-size: 28px;
+}
+
+/* adding styles to container-1 */
+#c1 {
+    /* flex items will be arranged from left to right, 
+    this is also the default  */
+    flex-direction: row;
+    /* jutify to left, start or end */
+    justify-content: center;
+    /* vertical alignment */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#c2 {
+    justify-content: space-around;
+    align-items: center;
+    /* shorthand for setting flex direction and wrap together */
+    flex-flow: column-reverse wrap;
+}
+
+#c3 {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#c4 {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.order-100 {
+    order: 100;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+
+/* flex-shrink property demo */
+/* #c4 {
+    flex-wrap: nowrap;
+}
+
+#c4b5 {
+    flex-shrink: 5;
+} */
+
+/* demo of CSS flex-grow property */
+.growable-item {
+    flex-grow: 1;
+    /* flex-wrap: nowrap; */
+}
+
+#c4b1 {
+    flex-grow: 3;
+}
+
+/* align self property */
+#c5 {
+    align-items: center;
+    justify-content: center;
+}
+
+/* oveeride alignment of particular items */
+#c5b1 {
+    align-self: flex-start;
+}
+
+#c5b5 {
+    align-self: flex-end;
+}
+
+
