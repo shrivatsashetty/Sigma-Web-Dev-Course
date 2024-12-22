@@ -1,0 +1,146 @@
+/* bring the numbering inside each of the child container (grid-items) to the center */
+.child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid-container {
+	border: 2px solid black;
+	padding: 5px;
+
+	/* set the display property to grid */
+	display: grid;
+
+	/* define the no of row and cols in our grid */
+	grid-template-columns: 120px auto 100px 150px;
+	/* the grid lines can also be assigned with names */
+	grid-template-rows: [col-line-1 col-start] 150px [col-line-2] 150px [col-line-3] 150px [col-line-4 col-end];
+
+	row-gap: 5px;
+	column-gap: 5px;
+	/* shorthand property */
+	gap: 5px 5px;
+}
+
+.grid-item {
+	border: 2px solid red;
+	/* let the height and width be dynamic so that we can see the span of elements */
+}
+
+/* setting the start and end lines for an item */
+.item-4 {
+    grid-column-start: 3;
+	grid-column-end: 4;
+	/* shorthand for setting column start & end */
+    grid-column: 3/4;
+    
+	/* start at specified grid line and span a certain no of grid tracks */
+	grid-row: 1 / span 2;
+
+	background-color: lightgreen;
+}
+
+
+.boxes {
+	margin-top: 20px;
+	border: 2px solid black;
+	width: 80vw;
+
+	/* set the display property to grid */
+	display: grid;
+
+	/* creates 3 column occupying 3/6, 2/6 and 1/6 of the total viewport width */
+	grid-template-columns: 3fr 2fr 1fr;
+
+	gap: 5px 5px;
+}
+
+.box {
+	border: 2px solid red;
+	height: 55px;
+	/* width: 55px; */
+}
+
+
+.container {
+	height: 50vh;
+	margin-top: 20px;
+	border: 2px solid black;
+	width: 90vw;
+
+	/* set the display property to grid */
+	display: grid;
+
+	/* demo of the repeat function */
+	grid-template-columns: 1fr 1fr 1fr;
+	/* using repeat function to repeat 1fr 3 times */
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px 5px;
+
+	/* alignment happens within grid box */
+	justify-items: center;
+	align-items: center;
+}
+
+.content {
+	border: 2px solid red;
+	height: 55px;
+	width: 55px;
+}
+
+.align-self-start {
+	align-self: start;
+	justify-self: end;
+}
+
+.rectangles {
+	margin-top: 20px;
+	border: 2px solid black;
+	width: 20vw;
+
+	/* set the display property to grid */
+	display: grid;
+
+	/* repeat 1fr 4 times keeping minimum width of each box to 10vw */
+	grid-template-columns: repeat(4, minmax(10vw, 1fr));
+
+	gap: 5px 5px;
+
+}
+
+.rectangle {
+	border: 2px solid red;
+	height: 55px;
+	/* width: 55px; */
+
+}
+
+
+.things {
+	margin-top: 20px;
+	border: 2px solid black;
+	width: 80vw;
+	height: 40vh;
+
+	/* set the display property to grid */
+	display: grid;
+
+	/* repeat 1fr 4 times keeping minimum width of each box to 10vw */
+	grid-template-columns: repeat(4, 10vw);
+
+	gap: 2vw 2vw;
+
+	/* align the position of the entire grid
+		used when the grid-container is larger than the grid-items */
+	justify-content: center;
+	align-content: center;
+	/* aligns and justifies items together */
+	place-content: center;
+}
+
+.thing {
+	border: 2px solid red;
+	height: 10vh;
+	width: 8vw;
+}
