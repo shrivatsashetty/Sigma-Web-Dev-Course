@@ -1,0 +1,44 @@
+.grid-container {
+	border: 2px solid black;
+	padding: 5px;
+
+	/* set the display property to grid */
+	display: grid;
+
+    /* define areas in the grid */
+    grid-template-areas: "header header header header header"
+                         "article article article . side"
+                         "footer footer footer footer footer";
+}
+
+.grid-items {
+    border: 2px solid red;
+    min-height: 10vh;
+    text-align: center;
+}
+
+/* setting the start and end lines for an item */
+.item-1 {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.item-2 {
+    grid-area: side;
+    background-color: bisque;
+}
+
+.item-3 {
+    grid-area: article;
+    background-color: pink;
+}
+
+.item-4 {
+    grid-area: footer;
+    background-color: yellow;
+}
+
+.article, .side{
+    min-height: 35vh;
+}
+
