@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 5px;
+
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+    justify-content: space-evenly;
+}
+
+
+#nav-product-icon{
+    height: 40px;
+    width: 100px;
+}
+
+
+#nav-settings-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 1px;
+}
+
+
+li {
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-items-list li{
+    cursor: pointer;
+}
+
+
+.nav-links-container {
+    display: flex;
+    margin-left: 10%;
+    gap: 15px;
+}
+
+
+div.nav-links-container li span {
+    padding: 5px;
+}
+
+/* to bring the nav-link and arrow logo to same line */
+div.nav-links-container li.nav-link-item {
+    display: flex;
+    align-items: center;
+}
+
+li.nav-link-item img.arrow-logo {
+    height: 18px;
+    width: 18px;
+}
+
+.nav-logo {
+    padding-top: 15px;
+}
+
