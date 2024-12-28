@@ -1,0 +1,136 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.box {
+    border: 2px solid black;
+    background-color: beige;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+}
+
+/* rotate element  */
+.rot-45-deg:hover {
+    transform: rotate(45deg);
+    /* by default ratate property rotates along the Z-Axis,
+    that's as good as aplying the following style below */
+    transform: rotateZ(45deg);
+}
+
+.rot-x-45-deg:hover {
+    /* rotate about X-Axis */
+    transform: rotateX(45deg);
+}
+
+.rot-y-45-deg:hover {
+    /* rotate about Y-Axis */
+    transform: rotateY(45deg);
+}
+
+.rot-quarter-turn:hover {
+    /* we can specify the rotation in terms of fraction of a turn
+     1 turn is equivalent to a roattion 360 degree clockwise  */
+    transform: rotate(0.25turn);
+    /* the above transform declaration gives a 1/4 of a turn i.e. 90deg */
+}
+
+.rot-neg-45:hover {
+    /* make the element rotate anti-clockwise */
+    transform: rotate(-45deg);
+}
+/* scale up the size of an element to 1.5x the orignal size*/
+#scale-box-1:hover {
+    transform: scale(1.5);
+}
+/* scale down or deacrease the size of the element to half of it's orignal size */
+#scale-box-2:hover {
+    transform: scale(0.5);
+}
+/* scale only along the X-Aixis */
+#scale-box-3:hover {
+    transform: scaleX(1.5);
+}
+/* scale only along the Y-Aixis */
+#scale-box-4:hover {
+    transform: scaleY(1.5);
+}
+/* independent scaling along X and Y axis */
+#scale-box-5:hover {
+    transform: scale(1.5, 0.5);
+}
+
+/* skew property */
+.skew-x-30-deg:hover {
+    transform: skewX(30deg);
+}
+
+.skew-y-30-deg:hover {
+    transform: skewY(30deg);
+}
+
+.skew-x-45-y-45:hover {
+    transform: skew(15deg, 15deg);
+}
+
+/* skews the selected element 45 degrees along the X-axis */
+.skew-45-0:hover {
+    transform: skew(45deg);
+}
+/* skews the selected element 45 degrees along the Y-Axis */
+.skew-0-45:hover {
+    transform: skew(0, 45deg);
+}
+
+
+/* translate property */
+#translating-box-1:hover {
+    /* moves the box along the positive X-Axis by 25% of the element's width */
+    transform: translateX(25%);
+}
+
+#translating-box-2:hover {
+    /* moves the box along the negative Y-Axis by 25% of the element's width */
+    transform: translateY(-25%);
+}
+
+#translating-box-3:hover {
+    /* translates together along the X and Y axis */
+    transform: translate(25%, 25%);
+}
+
+/* transform origin shifts the origin of rotation */
+.transform-origin-bottom-right:hover {
+    /* define the origin of rotation */
+    transform-origin: bottom left;
+    transform: rotate(-30deg);
+}
+
+.transform-origin-x-y:hover {
+    /* the transform-origin rule */
+    transform-origin: -100% 50%;
+    transform: rotate(45deg);
+    /* what actually happens under the hood */
+    transform-origin: 0 0;
+    transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);
+}
+
+/* applying multiple transform properties at once */
+.multi-transform-box:hover {
+    /* translate, skew and rotate together */
+    transform: translate(50%, 50%) skew(45deg, 0) rotate(45deg);
+}
+
+.matrix-transform-box:hover {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
