@@ -1,0 +1,226 @@
+h1 {
+    text-align: center;
+}
+
+div.container {
+    height: 80vh;
+    background-color: aquamarine;
+    padding: 5px;
+
+    display: flex;
+    column-gap: 10%;
+    row-gap: 5px;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* common style for all boxes */
+div.container div.box {
+    background-color: pink;
+
+    width: 20%;
+    height: 20%;
+    padding: 8px;
+
+    border-radius: 10px;
+
+    font-weight: 800;
+    font-size: 25px;
+}
+
+div.box-align-self-start {
+    justify-self: left;
+}
+
+
+/* define an animation */
+@keyframes move-around {
+    /* starting frame */
+    from {
+        background-color: yellow;
+    }
+    /* ending frame */
+    to {
+        background-color: goldenrod;
+        transform: translate(25vw);
+    }
+}
+
+@keyframes shift-bg-color {
+    /* animation start */
+    0% {
+        background-color: pink;
+    }
+    25% {
+        background-color: greenyellow;
+    }
+    /* middle of the animation */
+    50% {
+        background-color: cornflowerblue;
+    }
+    75% {
+        background-color: brown;
+    }
+    /* end of animation */
+    100% {
+        background-color: darkorange;
+    }
+}
+
+@keyframes color-transition {
+    /* using % values enables us to use smooth transitions */
+    0% {
+        color: black;
+
+    }
+    25% {
+        color: blueviolet;
+    }
+    50% {
+        color: red;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes spin-around {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(0.25turn);
+    }
+
+    50% {
+        transform: rotate(0.5turn);
+    }
+
+    75% {
+        transform: rotate(0.75turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+/* sliding-text animation */
+@keyframes slidingText {
+    from {
+        translate: 150vw;
+        scale: 2 1;
+    }
+    to {
+        translate: 0;
+        scale: 1 1;
+    }
+}
+
+/* grow and shrink animation */
+@keyframes grow-shrink {
+    /* selecting 25% and 75% together */
+    25%, 75% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 2;
+        color: magenta;
+    }
+}
+
+
+/* apply the animation on hover */
+.box-shift-bg-color:hover {
+    animation-name: shift-bg-color;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.box-color-transition:hover {
+    /* shorthand  animation property */
+    animation: color-transition 4s infinite;
+}
+
+.box-spin-around:hover {
+    animation: spin-around 4s;
+    /* the no of times the animation will run*/
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+}
+
+/* assign multiple animation to a single element */
+.box-multi-animate {
+    animation: shift-bg-color 4s ease-out infinite, 
+               spin-around 4s 2s ease-out infinite
+            ;
+}
+
+/* pausing an animation  */
+.box-multi-animate:hover {
+    animation-play-state: paused;
+}
+
+/* demo of all the sub properties of animation and the animation shorthand property itself */
+.box-move-around {
+    
+    /* 
+    animation:
+            name 
+            duration 
+            timing-function 
+            delay 
+            iteration-count 
+            direction 
+            fill-mode
+        ; 
+    */
+   
+
+
+    animation-name: move-around;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.13, 0.52, 0.41, 0.76);
+    animation-delay: 2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /* shorthand animation property */
+    animation:
+            move-around 
+            2s 
+            cubic-bezier(0.13, 0.52, 0.41, 0.76) 
+            2s 
+            infinite
+            alternate 
+            forwards
+        ;
+}
+
+/* play or pause the animation */
+.box-move-around:hover {
+    animation-play-state: paused;
+}
+
+.textbox {
+    animation-name: slidingText;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+
+p.textbox span {
+    /* setting the display to online block makes the scale transform
+    to get applied to both the span container and the content,
+    or else only the content will scale and not the container, having no effect */
+    display: inline-block;
+    animation: grow-shrink 3s infinite;
+}
