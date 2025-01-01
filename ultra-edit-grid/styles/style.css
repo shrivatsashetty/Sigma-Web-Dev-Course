@@ -1,0 +1,88 @@
+
+/* making the page reposnsive using the media queries */
+@media (min-width: 525px) {
+    
+    .download-links-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px 15px;
+
+    }
+    
+}
+
+@media (max-width: 525px) {
+    
+    .download-links-container {
+        display: grid;
+        grid-template-rows: repeat(10, auto);
+        row-gap: 15px;
+    }
+    
+}
+
+.download-links-container {
+    place-content: center;
+    padding: 5px;
+}
+
+
+.download-link-box {
+    /* border: 2px solid red; */
+    margin: 2px;
+    text-align: center;
+    padding: 5%;
+
+}
+
+
+/* apply the google font to body element so that all child elements will have the same font */
+body {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+h4 {
+    font-weight: 80;
+    line-height: 1.3em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-download {
+    color: #fff;
+
+    padding: 8px 16px;
+    margin: 2px;
+    border: 0;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.btn-download-64-bit {
+    background-color: #5cb85c;
+
+}
+
+.btn-download-32-bit {
+    background-color: rgb(131, 204, 204);
+}
+
+.sha {
+    word-break: break-all;
+    font-size: 10px;
+}
