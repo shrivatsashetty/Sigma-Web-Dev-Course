@@ -27,6 +27,10 @@ div.container div.box {
 
     font-weight: 800;
     font-size: 25px;
+    
+    /* hide the text if overflows */
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 div.box-align-self-start {
