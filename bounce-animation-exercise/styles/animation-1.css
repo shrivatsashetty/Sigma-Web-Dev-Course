@@ -1,0 +1,51 @@
+/* lets define the keyframes for the animation */
+
+/* horizontal part of the animation for displacement along Y-Axis */
+@keyframes displace-x {
+    /* to {
+        transform: translateX(90vw);
+    } */
+
+    from {
+        left: 0;
+    }
+    to {
+        left: 90%;
+    }
+}
+
+/* vertical part of animation for displacement along Y-Axis */
+@keyframes displace-y {
+    
+    /* from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        
+        transform: translate3d(0, -40vh, 0);
+        background-color: aqua;
+    } */
+
+	from {
+		bottom: 0;
+	}
+	to {
+		bottom: 45%;
+	}
+
+}
+
+.ball {
+    animation-name: displace-x, displace-y  ;
+    animation-duration: 4s, 1s ;
+    animation-delay: 1s, 1s ;
+    animation-timing-function: ease-in-out, ease-out ;
+    animation-iteration-count: infinite, infinite ;
+    animation-direction: alternate, alternate ;
+
+    /* using the shorhand property */
+    animation: 
+        displace-x 4s 1s ease-in-out infinite alternate,
+        displace-y 1s 1s ease-out infinite alternate
+        ;
+}

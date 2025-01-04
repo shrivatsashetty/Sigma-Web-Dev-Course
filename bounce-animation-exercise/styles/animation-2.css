@@ -1,0 +1,25 @@
+
+/* lets define the keyframes for the animation */
+
+@keyframes bounce-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(22.5vw, -22.5vw);
+    }
+    50% {
+        transform: translate(45vw, 0);
+    }
+    75% {
+        transform: translate(67.5vw, -22.5vw);
+    }
+    100% {
+        transform: translate(90vw, 0);
+    }
+}
+
+/* apply the above animation */
+.ball {
+    animation: bounce-animation 4s 1s ease-in-out infinite alternate;
+}
