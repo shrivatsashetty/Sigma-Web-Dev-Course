@@ -1,4 +1,6 @@
 .container {
+    min-height: 40vh;
+    margin: 10px;
     background-color: azure;    
     border: 4px solid black;
     padding: 10px;
@@ -12,7 +14,7 @@
 
 img {
     height: 400px;
-    width: 400px;
+    width: 350px;
     border: 4px solid goldenrod;
 }
 
@@ -25,17 +27,51 @@ img {
 }
 
 #img-3 {
-    object-fit: contain;
+    /* this is also the default value for object-fit */
+    object-fit: fill;
 }
 
 #img-4 {
-    object-fit: contain;
+    object-fit: none;
 }
 
 #img-5 {
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 #img-6 {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: bottom left;
 }
+
+#img-7 {
+    object-fit: cover;
+    object-position: 80% 20%;
+}
+
+#img-8 {
+    object-fit: cover;
+}
+
+#img-9 {
+    object-fit: contain;
+    object-position: -25% 10%;
+}
+
+
+.img-bg-container {
+    height: 50vh;
+
+    background-image: url("https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg");
+    /* focussing on the center of the image */
+    background-position: center center;
+    /* using pixel units */
+    background-position: 50% 50% ;
+
+    /* do not repeat along either X or Y axis */
+    background-repeat: no-repeat;
+    /* repetion allowe only along the Y Axis */
+    background-repeat: repeat-y;
+    /* repetition allowed only along the X axis */
+}
+
