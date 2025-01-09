@@ -1,0 +1,50 @@
+.grid-container {
+    border: 3px solid black;
+    min-height: 50vh;
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    justify-content: center;
+    align-content:space-evenly;
+    column-gap: 4%;
+    row-gap: 20px
+}
+
+img {
+    border: 3px solid goldenrod;
+
+    height: 30vw;
+    width: 30vw;
+
+    object-fit: cover;
+}
+
+#img-3 {
+    /* add a gaussian blur*/
+    filter: blur(3px);
+}
+
+#img-4 {
+    filter: grayscale(0.8)
+}
+
+#img-5 {
+    filter: invert(90%);
+}
+
+#img-6 {
+    filter: drop-shadow(5px 5px 5px red);
+}
+
+/* multiple filters can be applie on a single image by seperating with a whitespace */
+#img-7 {
+    filter: saturate(145%) sepia(50%);
+}
+
+#img-8 {
+    /* used to make the images transparent */
+    filter: opacity(35%);
+}
+
+
