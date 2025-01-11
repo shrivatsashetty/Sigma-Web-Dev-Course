@@ -1,5 +1,6 @@
 .grid-container {
     border: 3px solid black;
+    padding: 15px;
     min-height: 50vh;
 
     display: grid;
