@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+header {
+    /* for path specification using the url() function, the path should be relative to the CSS file */
+    background-image: url("./../assets/images/background-cover.jpg");
+    /* or the path should start from the website's root */
+    background-image: url("/assets/images/background-cover.jpg");
+    
+    width: 100vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+
+}
+
+header div.black-screen {
+        /* occupy the same size of the parent container */
+        width: 100vw;
+        height: 80vh;
+    
+        background-color: black;
+        opacity: 0.4;
+
+        position: absolute;
+        top: 0;
+}
+
+header .header-contents {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 0;
+    /* the content should be above the layer of black screen */
+    z-index: 2;
+
+    overflow: hidden;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.navbar-container {
+    position: relative;
+    top: 0;
+    width: 75%;
+    margin: auto;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+/* sizing the NETFLIX logo */
+#netflix-logo {
+    width: 50px;
+    height: 30px;
+    background-color: red;
+}
