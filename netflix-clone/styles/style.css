@@ -1,84 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .flex-container {
-    display: flex;
+	display: flex;
+}
+
+body {
+	overflow: hidden;
+    /* for dark mode effect */
+    background-color: black;
 }
 
 header {
-    /* for path specification using the url() function, the path should be relative to the CSS file */
-    background-image: url("./../assets/images/background-cover.jpg");
-    /* or the path should start from the website's root */
-    background-image: url("/assets/images/background-cover.jpg");
+	/* for path specification using the url() function, the path should be relative to the CSS file */
+	background-image: url("./../assets/images/background-cover.jpg");
+	/* or the path should start from the website's root */
+	background-image: url("/assets/images/background-cover.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+
+	width: 100vw;
+	height: 80vh;
+
+	position: relative;
+	top: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+
+/* 
+	position: absolute;
+	top: 0;
+    z-index: 0; */
+
+	overflow: hidden;
+}
+
+.black-screen {
+	/* occupy the same size of the parent container */
+	width: 100vw;
+	height: 80vh;
+
+	background-color: black;
+	opacity: 65%;
+
+	position: absolute;
+	top: 0;
+    z-index: 5;
+}
+
+.header-contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 5vh;
+
+	height: 100%;
+	padding: 3%;
+	overflow: hidden;
+
+	z-index: 10;
+
+	color: white;
     
-    width: 100vw;
-    height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-
+    font-family: "Martel Sans", serif;
+    font-weight: 400;
+	text-align: center;
 }
 
-header div.black-screen {
-        /* occupy the same size of the parent container */
-        width: 100vw;
-        height: 80vh;
-    
-        background-color: black;
-        opacity: 0.4;
+/* styling the navigation bar */
+nav {
+	width: 75vw;
+	margin: auto;
+	margin-top: 3vh;
 
-        position: absolute;
-        top: 0;
-}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
 
-header .header-contents {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    top: 0;
-    /* the content should be above the layer of black screen */
-    z-index: 2;
-
-    overflow: hidden;
-
-    color: white;
-
-    text-align: center;
-
-}
-
-
-.navbar-container {
-    position: relative;
-    top: 0;
-    width: 75%;
-    margin: auto;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-items {
-    display: flex;
-    align-items: center;
-
-    justify-content: space-between;
+	color: white;
+	font-family: "Martel Sans", serif;
 }
 
 /* sizing the NETFLIX logo */
 #netflix-logo {
-    width: 50px;
-    height: 30px;
-    background-color: red;
+	width: 148px;
+	height: 30px;
+}
+
+.sign-up-form> h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+div.horizontal-ruler {
+	height: 4px;
+	width: 100vw;
+	background-color: #3f3f3f;
+}
+
+.flex-items {
+	display: flex;
+}
+
+.sign-in-form .flex-items {
+	column-gap: 15px;
+	height: 38px;
+}
+
+.sign-up-form .flex-items {
+	column-gap: 15px;
+	justify-content: center;
+}
+
+.btn {
+	border-radius: 0.25rem;
+	font-family: inherit;
+	color: inherit;
+
+}
+
+.btn-red {
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+.btn-sm {
+	padding: 2px 7px;
+	height: 32px;
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+	height: 65px;
+    padding: 11px 35px;
 }

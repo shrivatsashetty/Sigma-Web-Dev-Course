@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Netflix India &ndash; Watch TV Shows Online, Watch Movies Online
-		</title>
-		<link rel="stylesheet" href="styles/style.css" />
-	</head>
 
-	<body>
-        <nav class="navbar-container flex-container">
-                <div class="logo-container">
-                    <img id="netflix-logo" src="/assets/logos/netflix-logo.svg" alt="">
-                </div>
-                
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Netflix India &ndash; Watch TV Shows Online, Watch Movies Online
+	</title>
+	<link rel="stylesheet" href="styles/style.css" />
+	<!-- import fonts from Google Fonts API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+		rel="stylesheet">
+</head>
 
-                <form class="navbar-form flex-container" action="">
-                    <div class="flex-container">
+<body>
+	<header>
+		<!-- navigation menu -->
+		<nav class="navbar-container flex-container">
+			
+			<img id="netflix-logo" src="/assets/logos/netflix-logo.svg" alt="" />
+			
 
-                        <div class="flex-container select-language" >
-                            <img src="/assets/icons/lang.svg" alt="language-symbol">
-    
-                            <select name="language" id="lang-select">
-                                <option value="eng-us">English</option>
-                                <option value="hindi-ind">Hindi</option>
-                                <option value="kan-ind">Kannada</option>
-                            </select>
-                            
-                            <img src="assets/icons/caret-down.svg" alt="arrow-down-symbol">
-                        </div>
+			<form class="navbar-form sign-in-form flex-container" action="">
 
-    
-    
-                        <button type="button" class="btn btn-sign-in">
-                            Sign In
-                        </button>
-
-                    </div>
-
-                </form>
-
-        </nav>
-
-		<header>
-
-
-
-			<div class="black-screen">
-
-            </div>
-
-			<div class="box header-contents">
-				<div class="main-heading-contents">
-					<h1>
-						Unlimited movies, TV <br />
-						shows and more
-					</h1>
-
-					<p class="">Starts at ₹149. Cancel at any time.</p>
+				<!-- <img src="/assets/icons/lang.svg" alt="language-symbol" /> -->
+				<div class="flex-items">
+					<select name="language" id="lang-select">
+						<option value="eng-us">English</option>
+						<option value="hindi-ind">Hindi</option>
+						<option value="kan-ind">Kannada</option>
+					</select>
+	
+					<!-- <img src="assets/icons/caret-down.svg" alt="arrow-down-symbol" /> -->
+	
+					<button type="button" id="btn-sign-in" class="btn btn-red btn-sm btn-red-sm">
+						Sign In
+					</button>
 				</div>
 
-				<form class="signup-form" action="">
-					<h3>
-						Ready to watch? Enter your email to create or restart
-						your membership.
-					</h3>
-					<input
-						type="text"
-						id="txt-input-sign-up-email"
-						placeholder="Email Address"
-					/>
-					<button type="button" class="btn-sign-up">Sign Up</button>
-				</form>
+			</form>
+		</nav>
+
+		<!-- for producing a black filter effect -->
+		<div class="black-screen"></div>
+
+		<div class="box header-contents">
+			<div class="main-heading-contents">
+				<h1>
+					Unlimited movies, TV <br />
+					shows and more
+				</h1>
+
+				<p class="">Starts at ₹149. Cancel at any time.</p>
 			</div>
-		</header>
-	</body>
+
+			<form class="sign-up-form" action="">
+
+				<h3>
+					Ready to watch? Enter your email to create or restart
+					your membership.
+				</h3>
+
+				<div class="flex-items">
+					<input type="text" id="txt-input-sign-up-email" placeholder="Email Address" />
+					<button type="button" id="btn-sign-up" class="btn btn-red btn-lg btn-red-lg">Sign Up</button>
+				</div>
+
+			</form>
+		</div>
+	</header>
+
+	<div class="horizontal-ruler">
+
+	</div>
+</body>
+
 </html>
