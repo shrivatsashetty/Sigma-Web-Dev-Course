@@ -8,7 +8,6 @@
 }
 
 body {
-	overflow: hidden;
     /* for dark mode effect */
     background-color: black;
 }
@@ -23,7 +22,7 @@ header {
     background-size: max(1200px, 100vw);
 
 	width: 100vw;
-	height: 80vh;
+	height: 660px;
 
 	position: relative;
 	top: 0;
@@ -45,7 +44,7 @@ header {
 .black-screen {
 	/* occupy the same size of the parent container */
 	width: 100vw;
-	height: 80vh;
+	height: 660px;
 
 	background-color: black;
 	opacity: 65%;
@@ -62,7 +61,8 @@ header {
 	align-items: center;
 	row-gap: 5vh;
 
-	height: 100%;
+	height: calc(100% - 38px);
+	width: 100%;
 	padding: 3%;
 	overflow: hidden;
 
@@ -109,6 +109,7 @@ div.horizontal-ruler {
 
 .flex-items {
 	display: flex;
+	align-content: center;
 }
 
 .sign-in-form .flex-items {
@@ -117,15 +118,24 @@ div.horizontal-ruler {
 }
 
 .sign-up-form .flex-items {
-	column-gap: 15px;
+	column-gap: 20px;
 	justify-content: center;
+	
+}
+
+.sign-up-form .flex-items input,
+.sign-up-form .flex-items button {
+	font-size: 1.5rem;
+	font-weight: 500;
+	min-height: 3.5rem;
+	height: 65px;
 }
 
 .btn {
-	border-radius: 0.25rem;
+	border-radius: 8px;
 	font-family: inherit;
 	color: inherit;
-
+	overflow: hidden;
 }
 
 .btn-red {
@@ -139,9 +149,25 @@ div.horizontal-ruler {
 }
 
 .btn-lg {
-    font-size: 1.5rem;
-    font-weight: 500;
-    min-height: 3.5rem;
-	height: 65px;
-    padding: 11px 35px;
+    width: 200px;
+    padding: 12px 30px;
+}
+
+.header-form .flex-items :nth-child(1) {
+	background-color: rgba(23, 23, 23, 0.7);
+	color: white;
+}
+
+.header-form .flex-items *{
+	border: 0.9px solid white;
+}
+
+
+.txt-email {
+    border-radius: 8px;
+    padding: 0px 35px;
+}
+
+#btn-lang span {
+	border: none;
 }
