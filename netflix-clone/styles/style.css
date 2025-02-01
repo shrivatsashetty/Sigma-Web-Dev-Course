@@ -1,10 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-
-.flex-container {
-	display: flex;
+	border: 0;
 }
 
 body {
@@ -33,12 +30,8 @@ header {
 	align-items: center;
 	row-gap: 20px;
 
-/* 
-	position: absolute;
-	top: 0;
-    z-index: 0; */
-
-	overflow: hidden;
+	/* overflow: auto; */
+	overflow-x: hidden;
 }
 
 .black-screen {
@@ -64,7 +57,7 @@ header {
 	height: calc(100% - 38px);
 	width: 100%;
 	padding: 3%;
-	overflow: hidden;
+	/* overflow: hidden; */
 
 	z-index: 10;
 
@@ -136,6 +129,7 @@ div.horizontal-ruler {
 	font-family: inherit;
 	color: inherit;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .btn-red {
@@ -149,7 +143,7 @@ div.horizontal-ruler {
 }
 
 .btn-lg {
-    width: 200px;
+    /* min-width: 222px; */
     padding: 12px 30px;
 }
 
@@ -171,3 +165,4 @@ div.horizontal-ruler {
 #btn-lang span {
 	border: none;
 }
+
