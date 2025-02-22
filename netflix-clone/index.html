@@ -1,79 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Netflix India &ndash; Watch TV Shows Online, Watch Movies Online
+		</title>
+		<!-- adding a favicon top your webpage -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/assets/icons/netflix-favicon.ico"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<!-- import fonts from Google Fonts API -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>
-		Netflix India &ndash; Watch TV Shows Online, Watch Movies Online
-	</title>
-	<!-- adding a favicon top your webpage -->
-	<link rel="icon" type="image/x-icon" href="/assets/icons/netflix-favicon.ico">
-	<link rel="stylesheet" href="styles/style.css" />
-	<!-- import fonts from Google Fonts API -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
-		rel="stylesheet">
-</head>
+	<body>
+		<header>
+			<!-- navigation menu -->
+			<nav class="navbar-container flex-container">
+				<img
+					id="netflix-logo"
+					src="/assets/logos/netflix-logo.svg"
+					alt="Netflix Logo"
+				/>
 
-<body>
-	<header>
-		<!-- navigation menu -->
-		<nav class="navbar-container flex-container">
-			
-			<img id="netflix-logo" src="/assets/logos/netflix-logo.svg" alt="Netflix Logo" />
-			
+				<form
+					class="navbar-form header-form sign-in-form flex-container"
+					action=""
+				>
+					<div class="flex-items">
+						<button type="button" id="btn-lang" class="btn btn-sm">
+							English
+						</button>
 
-			<form class="navbar-form header-form sign-in-form flex-container" action="">
+						<button
+							type="button"
+							id="btn-sign-in"
+							class="btn btn-red btn-sm btn-red-sm"
+						>
+							Sign In
+						</button>
+					</div>
+				</form>
+			</nav>
 
-				<div class="flex-items">
+			<!-- for producing a black filter effect -->
+			<div class="black-screen"></div>
 
-					<button type="button" id="btn-lang" class="btn btn-sm">
-						English
-					</button>
+			<div class="box header-contents contents">
+				<div class="main-heading-contents">
+					<h1>
+						Unlimited movies, TV <br />
+						shows and more
+					</h1>
 
-	
-					<button type="button" id="btn-sign-in" class="btn btn-red btn-sm btn-red-sm">
-						Sign In
-					</button>
+					<p class="">Starts at ₹149. Cancel at any time.</p>
 				</div>
 
-			</form>
-		</nav>
+				<form class="sign-up-form header-form" action="">
+					<h3>
+						Ready to watch? Enter your email to create or restart
+						your membership.
+					</h3>
 
-		<!-- for producing a black filter effect -->
-		<div class="black-screen"></div>
-
-		<div class="box header-contents">
-			<div class="main-heading-contents">
-				<h1>
-					Unlimited movies, TV <br />
-					shows and more
-				</h1>
-
-				<p class="">Starts at ₹149. Cancel at any time.</p>
+					<div class="flex-items">
+						<input
+							type="text"
+							id="txt-input-sign-up-email"
+							class="txt-email"
+							placeholder="Email Address"
+						/>
+						<button
+							type="button"
+							id="btn-sign-up"
+							class="btn btn-red btn-lg btn-red-lg"
+						>
+							Get Started &gt;
+						</button>
+					</div>
+				</form>
 			</div>
+		</header>
 
-			<form class="sign-up-form header-form" action="">
+		<!-- a line of seperation between the header and the main section -->
+		<div class="horizontal-ruler"></div>
 
-				<h3>
-					Ready to watch? Enter your email to create or restart
-					your membership.
-				</h3>
-
-				<div class="flex-items">
-					<input type="text" id="txt-input-sign-up-email" class="txt-email " placeholder="Email Address" />
-					<button type="button" id="btn-sign-up" class="btn btn-red btn-lg btn-red-lg">Get Started &gt; </button>
+		<!-- main section -->
+		<main id="main-section">
+			<div class="main-contents contents" >
+				<div class="trending">
+					<h2 style="font-size: 28px;"> Trending Now </h2>
+					<div class="poster-cards flex-items">
+						<img class="poster-card" src="/assets/images/amaran-poster.webp" alt="amaran-poster">
+						<img class="poster-card" src="/assets/images/black-warrant-poster.webp" alt="black-warrant-poster">
+						<img class="poster-card" src="/assets/images/bool-bhulaiya-poster.webp" alt="bool-bhulaiya-poster">
+						<img class="poster-card" src="/assets/images/carry-on-poster.webp" alt="carry-on-poster">
+						<img class="poster-card" src="/assets/images/lucky-bhaskar-poster.webp" alt="lucky-bhaskar-poster">
+						<img class="poster-card" src="/assets/images/sikandar-poster.webp" alt="sikandar-poster">
+						<img class="poster-card" src="/assets/images/sorgavaasal-poster.webp" alt="sorgavaasal-poster">
+					</div>
 				</div>
-
-			</form>
-		</div>
-	</header>
-
-	<div class="horizontal-ruler">
-
-	</div>
-</body>
-
+			</div>
+		</main>
+	</body>
 </html>

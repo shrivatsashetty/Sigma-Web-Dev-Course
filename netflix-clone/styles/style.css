@@ -4,9 +4,16 @@
 	border: 0;
 }
 
+:root {
+	--netflix-red: rgb(229, 9, 20);
+	--global-font-color: white;
+	--global-font-family: "Martel Sans", serif;
+}
+
 body {
     /* for dark mode effect */
     background-color: black;
+	overflow-x: hidden;
 }
 
 header {
@@ -30,9 +37,10 @@ header {
 	align-items: center;
 	row-gap: 20px;
 
-	/* overflow: auto; */
-	overflow-x: hidden;
+	overflow-x: inherit;
+
 }
+
 
 .black-screen {
 	/* occupy the same size of the parent container */
@@ -47,11 +55,19 @@ header {
     z-index: 5;
 }
 
-.header-contents {
+.contents {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+
+	color: var(--global-font-color);
+
+    font-family: "Martel Sans", serif;
+
+}
+
+.header-contents {
+	/* display property is set by the contents class */
 	row-gap: 5vh;
 
 	height: calc(100% - 38px);
@@ -60,12 +76,14 @@ header {
 	/* overflow: hidden; */
 
 	z-index: 10;
-
-	color: white;
-    
-    font-family: "Martel Sans", serif;
-    font-weight: 400;
+   
 	text-align: center;
+}
+
+
+.header-contents h1 {
+    font-size: 35px;
+    font-weight: 900;
 }
 
 /* styling the navigation bar */
@@ -79,7 +97,7 @@ nav {
 	align-items: center;
 	z-index: 10;
 
-	color: white;
+	color: var(--global-font-color);
 	font-family: "Martel Sans", serif;
 }
 
@@ -94,16 +112,15 @@ nav {
     font-weight: 300;
 }
 
+/* style of the element which acts as the line of seperation
+between the header and the main contents */
 div.horizontal-ruler {
 	height: 4px;
 	width: 100vw;
 	background-color: #3f3f3f;
 }
 
-.flex-items {
-	display: flex;
-	align-content: center;
-}
+
 
 .sign-in-form .flex-items {
 	column-gap: 15px;
@@ -113,12 +130,11 @@ div.horizontal-ruler {
 .sign-up-form .flex-items {
 	column-gap: 20px;
 	justify-content: center;
-	
 }
 
 .sign-up-form .flex-items input,
 .sign-up-form .flex-items button {
-	font-size: 1.5rem;
+		font-size: 1.5rem;
 	font-weight: 500;
 	min-height: 3.5rem;
 	height: 65px;
@@ -133,8 +149,8 @@ div.horizontal-ruler {
 }
 
 .btn-red {
-    background: rgb(229, 9, 20);
-    color: rgb(255, 255, 255);
+    background: var(--netflix-red);
+    color: var(--global-font-color);
 }
 
 .btn-sm {
@@ -149,11 +165,11 @@ div.horizontal-ruler {
 
 .header-form .flex-items :nth-child(1) {
 	background-color: rgba(23, 23, 23, 0.7);
-	color: white;
+	color: var(--global-font-color);
 }
 
 .header-form .flex-items *{
-	border: 0.9px solid white;
+	border: 0.9px solid var(--global-font-color);
 }
 
 
@@ -164,5 +180,46 @@ div.horizontal-ruler {
 
 #btn-lang span {
 	border: none;
+}
+
+
+/* the styles corresponding to the main section */
+
+main {
+	margin-top: 40px;
+}
+
+.main-contents {
+	color: var(--global-font-color);
+	width: 80vw;
+	/* align the contents to center */
+	margin: auto;
+
+	/* hide any horizontal overflow */
+	overflow-x: hidden;
+}
+
+.main-contents h2 {
+	font-size: 22px;
+	font-weight: 900;
+}
+
+.poster-cards {
+    display: flex;
+	column-gap: 35px;
+    justify-content: space-between;
+	overflow-x: scroll;
+	padding: 20px;
+}
+
+.poster-card {
+	border-radius: 14px;
+	width: 180px;
+	height: 252px;
+}
+
+.poster-card:hover {
+	transform: scale(1.13);
+	transition: transform 0.3s linear;
 }
 
