@@ -73,10 +73,9 @@ header {
 	height: calc(100% - 38px);
 	width: 100%;
 	padding: 3%;
-	/* overflow: hidden; */
 
 	z-index: 10;
-   
+	
 	text-align: center;
 }
 
@@ -204,12 +203,23 @@ main {
 	font-weight: 900;
 }
 
-.poster-cards {
+.ul-poster-cards {
     display: flex;
 	column-gap: 35px;
     justify-content: space-between;
 	overflow-x: scroll;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
 	padding: 20px;
+
+	list-style-type: none;
+}
+
+/* for hiding the scrollbar in the chrome web browser using the pseudo element selector */
+.ul-poster-cards::-webkit-scrollbar {
+    display: none;
 }
 
 .poster-card {
@@ -222,4 +232,3 @@ main {
 	transform: scale(1.13);
 	transition: transform 0.3s linear;
 }
-
