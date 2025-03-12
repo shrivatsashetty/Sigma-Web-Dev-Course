@@ -4,6 +4,7 @@
 	border: 0;
 }
 
+/* setting global CSS variables */
 :root {
 	--netflix-red: rgb(229, 9, 20);
 	--global-font-color: white;
@@ -42,7 +43,7 @@ header {
 }
 
 
-.black-screen {
+#black-screen {
 	/* occupy the same size of the parent container */
 	width: 100vw;
 	height: 660px;
@@ -63,7 +64,6 @@ header {
 	color: var(--global-font-color);
 
     font-family: "Martel Sans", serif;
-
 }
 
 .header-contents {
@@ -111,6 +111,19 @@ nav {
     font-weight: 300;
 }
 
+.sign-up-form .flex-items {
+	column-gap: 20px;
+	justify-content: center;
+}
+
+.sign-up-form .flex-items input,
+.sign-up-form .flex-items button {
+	font-size: 1.5rem;
+	font-weight: 500;
+	min-height: 3.5rem;
+	height: 65px;
+}
+
 /* style of the element which acts as the line of seperation
 between the header and the main contents */
 div.horizontal-ruler {
@@ -119,24 +132,9 @@ div.horizontal-ruler {
 	background-color: #3f3f3f;
 }
 
-
-
 .sign-in-form .flex-items {
 	column-gap: 15px;
 	height: 38px;
-}
-
-.sign-up-form .flex-items {
-	column-gap: 20px;
-	justify-content: center;
-}
-
-.sign-up-form .flex-items input,
-.sign-up-form .flex-items button {
-		font-size: 1.5rem;
-	font-weight: 500;
-	min-height: 3.5rem;
-	height: 65px;
 }
 
 .btn {
@@ -195,24 +193,40 @@ main {
 	margin: auto;
 
 	/* hide any horizontal overflow */
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
-.main-contents h2 {
-	font-size: 22px;
-	font-weight: 900;
+.main-contents section {
+	margin: 0 0 64px 0;
 }
 
+section.sign-up-form {
+	text-align: center;
+}
+
+/* the below class determines the boldness and font-size for all section headings */
+.section-heading {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* the below class selector is used to add some default padding 
+to a container containing cards like items */
+.padded-container {
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+/* the container containing the poster cards */
 .ul-poster-cards {
     display: flex;
 	column-gap: 35px;
     justify-content: space-between;
 	overflow-x: scroll;
 
+	/* hiding the scrollbar */
 	scrollbar-width: none;
 	-ms-overflow-style: none;
-
-	padding: 20px;
 
 	list-style-type: none;
 }
@@ -228,7 +242,92 @@ main {
 	height: 252px;
 }
 
+/* to slightly scale up the show poster image */
 .poster-card:hover {
 	transform: scale(1.13);
 	transition: transform 0.3s linear;
+}
+
+/* the container that contains the reasons-to-join cards */
+.reasons-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+/* a reason to join card, this card must be positioned since 
+we want to apply abs pos to one of it's child element */
+.reason-card {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+
+    border: 1px solid white;
+	border-radius: 14px;
+	width: 290px;
+    height: 258px;
+
+	position: relative;
+	top: 0px;
+
+	background-image: linear-gradient(to bottom right, rgb(25 33 69), rgb(33 15 25));
+}
+
+.card-desc {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    line-height: 20px;
+	font-size: 13px;
+}
+
+.card-desc h3 {
+	font-size: 24px;
+	line-height: 27.6316px;
+}
+
+.reason-card p {
+	color: rgba(255,255,255,0.7);
+}
+
+.reason-pic {
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    bottom: 3%;
+    right: 4%;
+}
+
+/* styles for FAQ section */
+
+ul.faq-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+
+	list-style: none;
+}
+
+li.question {
+	border: 1px solid var(--global-font-color);
+}
+
+/* targetting all button elements inside the questions li  */
+li.question button {
+	display: flex;
+	justify-content: space-between;
+
+	background-color: transparent;
+	color: inherit;
+	font-size: 24px;
+	font-weight: 400;
+	width: 100%;
+	height: 84px;
+	background-color: rgb(45 45 45);
+
+	box-sizing: border-box;
+	padding: 24px;
+
+	font-family: var(--global-font-family);
 }
