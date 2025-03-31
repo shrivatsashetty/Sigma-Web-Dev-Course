@@ -61,9 +61,22 @@ header {
 	flex-direction: column;
 	justify-content: center;
 
+	width: 80vw;
+	margin: auto;
+
 	color: var(--global-font-color);
 
     font-family: "Martel Sans", serif;
+}
+
+/* all decendant para and anchor tags must be grey colored text */
+.contents p, 
+.contents a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.contents ul li {
+	list-style-type: none;
 }
 
 .header-contents {
@@ -138,9 +151,10 @@ div.horizontal-ruler {
 }
 
 .btn {
+	border: 1px solid var(--global-font-color);
 	border-radius: 8px;
 	font-family: inherit;
-	color: inherit;
+	color: var(--global-font-color);
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -228,7 +242,6 @@ to a container containing cards like items */
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 
-	list-style-type: none;
 }
 
 /* for hiding the scrollbar in the chrome web browser using the pseudo element selector */
@@ -287,10 +300,6 @@ we want to apply abs pos to one of it's child element */
 	line-height: 27.6316px;
 }
 
-.reason-card p {
-	color: rgba(255,255,255,0.7);
-}
-
 .reason-pic {
     height: 72px;
     width: 72px;
@@ -305,8 +314,6 @@ ul.faq-container {
 	display: flex;
 	flex-direction: column;
 	row-gap: 8px;
-
-	list-style: none;
 }
 
 li.question {
@@ -331,3 +338,41 @@ li.question button {
 
 	font-family: var(--global-font-family);
 }
+
+/* styles for the footer */
+
+.flexbox {
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	margin: 24px 0 0 0;
+	padding-bottom: 96px;
+}
+
+div.utilities ul.util-links-list {
+    flex-direction: row;
+	flex-wrap: wrap;
+}
+
+ul.util-links-list li{
+	min-width: 254px;
+}
+
+div.footer-contents > * {
+	margin-top: 36px;
+}
+
+div.lang-btn {
+	align-items: center;
+	justify-content: center;
+	column-gap: 8px;
+}
+
+div.lang-select select{
+	appearance: none;
+	background-color: black;
+	color: var(--global-font-color);
+}
+
