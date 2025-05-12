@@ -11,6 +11,12 @@
 	--global-font-family: "Martel Sans", serif;
 }
 
+/* setting root font weight & size */
+html {
+	font-size: 16px;
+	font-weight: normal;
+}
+
 body {
     /* for dark mode effect */
     background-color: black;
@@ -94,8 +100,9 @@ header {
 
 
 .header-contents h1 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 900;
+	line-height: 115%;
 }
 
 /* styling the navigation bar */
@@ -116,12 +123,12 @@ nav {
 /* sizing the NETFLIX logo */
 #netflix-logo {
 	width: 148px;
-	height: 30px;
+	height: 40px;
 }
 
 .sign-up-form> h3 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .sign-up-form .flex-items {
@@ -135,6 +142,8 @@ nav {
 	font-weight: 500;
 	min-height: 3.5rem;
 	height: 65px;
+	margin-bottom: 10px;
+	border-radius: 35px;
 }
 
 /* style of the element which acts as the line of seperation
@@ -166,7 +175,8 @@ div.horizontal-ruler {
 
 .btn-sm {
 	padding: 2px 7px;
-	height: 32px;
+	height: 30.3158px;
+	width: 75.1842px
 }
 
 .btn-lg {
@@ -220,8 +230,9 @@ section.sign-up-form {
 
 /* the below class determines the boldness and font-size for all section headings */
 .section-heading {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 700;
+	opacity: 0.8;
 }
 
 /* the below class selector is used to add some default padding 
@@ -275,11 +286,10 @@ we want to apply abs pos to one of it's child element */
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-
-    border: 1px solid white;
+	row-gap: 45px;
 	border-radius: 14px;
-	width: 290px;
-    height: 258px;
+	/* width: 290px; */
+    /* height: 258px; */
 
 	position: relative;
 	top: 0px;
@@ -296,13 +306,13 @@ we want to apply abs pos to one of it's child element */
 }
 
 .card-desc h3 {
-	font-size: 24px;
-	line-height: 27.6316px;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
-.reason-pic {
-    height: 72px;
-    width: 72px;
+.reason-icon {
+    height: 3rem;
+    width: 3rem;
     position: absolute;
     bottom: 3%;
     right: 4%;
@@ -316,27 +326,25 @@ ul.faq-container {
 	row-gap: 8px;
 }
 
-li.question {
-	border: 1px solid var(--global-font-color);
-}
-
 /* targetting all button elements inside the questions li  */
 li.question button {
 	display: flex;
 	justify-content: space-between;
-
+	align-items: center;
 	background-color: transparent;
 	color: inherit;
-	font-size: 24px;
-	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: 500;
 	width: 100%;
-	height: 84px;
+	/* height: 84px; */
 	background-color: rgb(45 45 45);
 
 	box-sizing: border-box;
-	padding: 24px;
+	padding: 1.5rem;
 
 	font-family: var(--global-font-family);
+
+	border-radius: 40px;
 }
 
 /* styles for the footer */
@@ -368,6 +376,9 @@ div.lang-btn {
 	align-items: center;
 	justify-content: center;
 	column-gap: 8px;
+	padding: 7px;
+	border-radius: 40px;
+    height: 17px;
 }
 
 div.lang-select select{
