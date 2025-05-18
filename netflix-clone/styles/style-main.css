@@ -1,0 +1,239 @@
+@import url("./base.css");
+
+/* the styles corresponding to the main section */
+
+main {
+	margin-top: 40px;
+}
+
+.main-contents {
+	color: var(--global-font-color);
+	width: 80vw;
+	/* align the contents to center */
+	margin: auto;
+
+	/* hide any horizontal overflow */
+	overflow: hidden;
+}
+
+.main-contents section {
+	margin: 0 0 64px 0;
+}
+
+section.sign-up-form {
+	text-align: center;
+}
+
+/* the below class determines the boldness and font-size for all section headings */
+.section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+	opacity: 0.8;
+}
+
+/* for resizing the section headings */
+@media (max-width: 960px) {
+    .section-heading {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+
+/* the below class selector is used to add some default padding 
+to a container containing cards like items */
+.padded-container {
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+/* the container containing the poster cards */
+.ul-poster-cards {
+    display: flex;
+	column-gap: 35px;
+    justify-content: space-between;
+	overflow-x: scroll;
+
+	/* hiding the scrollbar */
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
+}
+
+/* for hiding the scrollbar in the chrome web browser using the pseudo element selector */
+.ul-poster-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.poster-card {
+	border-radius: 14px;
+	width: 180px;
+	height: 252px;
+}
+
+@media (max-width: 1280px) {
+	.poster-card {
+		transform: scale(0.95);
+	}
+}
+
+@media (max-width: 960px) {
+	.poster-card {
+		transform: scale(0.85);
+	}
+}
+
+/* to slightly scale up the show poster image */
+.poster-card:hover {
+	transform: scale(1.13);
+	transition: transform 0.3s linear;
+}
+
+
+.reasons-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	column-gap: 20px;
+}
+
+/* if the width is less than 960px then reson cards appear one below the other  */
+@media (max-width: 960px) {
+	.reasons-cards-container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+}
+
+
+.reason-card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 10px;
+	border-radius: 14px;
+
+	position: relative;
+	top: 0px;
+
+	background-image: linear-gradient(to bottom right, rgb(25 33 69), rgb(33 15 25));
+}
+
+/* the container which contains the TV icon,
+to make TV icon appear on the extreme right */
+.reason-pic-container {
+	display: flex;
+	flex-direction: row;
+
+	/* the below style justifies the child contents of this flexbox towards flex-end */
+	justify-content: flex-end;
+}
+
+/* the below styles will only be applies if the width of the viewport is 
+	between 960px to 600px */
+@media (max-width: 960px) and (min-width: 600px) {
+
+	.reason-card {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		column-gap: 20px;
+		justify-content: space-between;
+	}	
+
+	.card-desc {
+		flex-direction: column;
+	}
+
+	.reason-pic-container {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+/* the below container contains text decription about reason to buy
+	this container has the reson as h3 and description of reason as a p elemnt */
+.card-desc {
+    display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    line-height: 20px;
+}
+
+.card-desc h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .card-desc h3 {
+        font-size: 1rem;
+    }
+}
+
+.card-desc p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+
+    .card-desc p {
+        font-size: 0.8rem;
+    }
+}
+
+.reason-icon {
+    height: 3rem;
+    width: 3rem;
+    /* position: absolute; */
+    bottom: 3%;
+    right: 4%;
+}
+
+/* styles for FAQ section */
+
+ul.faq-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+/* targetting all button elements inside the questions li  */
+li.question button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: transparent;
+	color: inherit;
+
+    font-size: 1.125rem;
+	font-weight: 500;
+    text-align: left;
+
+	width: 100%;
+	background-color: rgb(45 45 45);
+
+	box-sizing: border-box;
+	padding: 1.5rem;
+
+	font-family: var(--global-font-family);
+
+	border-radius: 1rem;
+}
+
+@media screen and (max-width: 959.98px) {
+    li.question button {
+        font-size: 0.875rem;
+        padding: 1rem;
+    }
+}
+
+/* styles for the footer */
+
+.flexbox {
+	display: flex;
+	align-items: center;
+}

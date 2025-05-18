@@ -1,0 +1,243 @@
+/* here's way to import styles from another style sheet */
+@import url('./base.css');
+
+body {
+    /* for dark mode effect */
+    background-color: black;
+	overflow-x: hidden;
+}
+
+header {
+	/* for path specification using the url() function, the path should be relative to the CSS file */
+	background-image: url("./../assets/images/background-cover.jpg");
+	/* or the path should start from the website's root */
+	background-image: url("/assets/images/background-cover.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+
+	width: 100vw;
+	height: 660px;
+
+	position: relative;
+	top: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+
+	overflow-x: inherit;
+
+}
+
+
+#black-screen {
+	/* occupy the same size of the parent container */
+	width: 100vw;
+	height: 660px;
+
+	background-color: black;
+	opacity: 65%;
+
+	position: absolute;
+	top: 0;
+    z-index: 5;
+}
+
+.contents {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 80vw;
+	margin: auto;
+
+	color: var(--global-font-color);
+
+    font-family: "Martel Sans", serif;
+}
+
+/* all decendant para and anchor tags must be grey colored text */
+.contents p, 
+.contents a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.contents ul li {
+	list-style-type: none;
+}
+
+.header-contents {
+	/* display property is set by the contents class */
+	row-gap: 5vh;
+
+	height: calc(100% - 38px);
+	width: 100%;
+	padding: 3%;
+
+	z-index: 10;
+	
+	text-align: center;
+}
+
+
+.header-contents h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 125%;
+}
+
+@media (max-width: 1280px) {
+
+	.header-contents h1 {
+        font-size: 3rem;
+	}
+
+}
+
+@media (max-width: 960px) {
+
+	.header-contents h1 {
+        font-size: 2rem;
+        font-weight: 700;
+	}
+
+}
+
+@media (max-width: 600px) {
+
+	.header-contents h1 {
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+}
+
+
+.header-contents .header-desc {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+	.header-contents .header-desc {
+		font-size: 1.125rem;
+		font-weight: 400;
+	}
+}
+
+@media (max-width: 960px) {
+	.header-contents .header-desc {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
+
+
+/* styling the navigation bar */
+nav {
+	min-width: 75vw;
+	margin: auto;
+	margin-top: 3vh;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+
+	color: var(--global-font-color);
+	font-family: "Martel Sans", serif;
+}
+
+@media (max-width: 450px) {
+	nav {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+}
+
+/* sizing the NETFLIX logo */
+#netflix-logo {
+	width: 148px;
+	height: 40px;
+}
+
+.sign-up-form> h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 960px) {
+	.sign-up-form> h3 {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
+
+@media (max-width: 600px) {
+	.sign-up-form> h3 {
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+}
+
+.sign-up-form .flex-items {
+	column-gap: 20px;
+	justify-content: center;
+}
+
+.sign-up-form .flex-items input,
+.sign-up-form .flex-items button {
+	font-size: 1.5rem;
+	font-weight: 500;
+	min-height: 3.5rem;
+	height: 65px;
+	margin-bottom: 10px;
+	border-radius: 35px;
+}
+
+/* for the email id input & sign up button to resize */
+@media (max-width: 960px) {
+	.sign-up-form .flex-items input,
+	.sign-up-form .flex-items button {
+		font-size: 1rem;
+		height: 16px;
+
+	}
+}
+
+.sign-in-form .flex-items {
+	column-gap: 15px;
+	height: 38px;
+}
+
+/* style of the element which acts as the line of seperation
+between the header and the main contents */
+div.horizontal-ruler {
+	height: 4px;
+	width: 100vw;
+	background-color: #3f3f3f;
+}
+
+.header-form .flex-items :nth-child(1) {
+	background-color: rgba(23, 23, 23, 0.7);
+	color: var(--global-font-color);
+}
+
+.header-form .flex-items *{
+	border: 0.9px solid var(--global-font-color);
+}
+
+
+.txt-email {
+    border-radius: 8px;
+    padding: 0px 35px;
+}
+
+#btn-lang span {
+	border: none;
+}
+
+
