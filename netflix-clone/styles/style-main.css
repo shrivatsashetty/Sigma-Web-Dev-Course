@@ -237,3 +237,19 @@ li.question button {
 	display: flex;
 	align-items: center;
 }
+
+#btn-scroll-to-top {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: rgba(128, 128, 128, 0.792);
+	padding: 7px;
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+}
+
+#svg-scroll-to-top {
+	/* background-color: rgba(0, 0, 0, 0.192); */
+	fill: violet;
+}
